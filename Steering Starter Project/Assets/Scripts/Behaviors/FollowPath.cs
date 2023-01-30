@@ -21,7 +21,7 @@ public class FollowPath : Seek
     {
         Vector3 currentPos = character.transform.position;
         Vector3 futurePos = character.transform.position * predictTime * Time.deltaTime;
-        for (int i = 0; i < path.positions.Count;i++ )
+        for (int i = closestParam; i < path.positions.Count;i++ )
         {
             if (Vector3.Distance(currentPos, path.positions[i]) < lowestDist)
             {
