@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class MyPath : MonoBehaviour
 {
-    public List <Vector3> positions = new List<Vector3>() {new Vector3(0,0,0), new Vector3 (3,0,0)};
+    public List <Vector3> positions = new List<Vector3>() {new Vector3(0,0,0), new Vector3 (3,0,0), new Vector3(6,0,3)};
     public int GetParam(Vector3 position, int lastParam)
     {
         if (Vector3.Distance(position, positions[lastParam]) > Vector3.Distance(position, positions[lastParam + 1]))
