@@ -22,7 +22,7 @@ public class FollowPath : Seek
         if (target == null)
         {
             
-            for (int i = 0; i < 2; i++)
+            for (int i = closestParam; i < 2; i++)
             {
                 if (i > 1)
                 {
